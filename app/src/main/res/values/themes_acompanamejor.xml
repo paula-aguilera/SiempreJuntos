@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.SiempreJuntosApp" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/am_azul</item>
+        <item name="colorPrimaryDark">@color/am_azul</item>
+        <item name="colorAccent">@color/am_naranja</item>
+        <item name="android:windowBackground">@color/am_fondo</item>
+        <item name="android:statusBarColor">@color/am_fondo</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <!-- Botones grandes, fondo claro y letra oscura para leer bien -->
+    <style name="AM.Boton" parent="Widget.AppCompat.Button">
+        <item name="android:minHeight">92dp</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/am_texto</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="AM.BotonChico" parent="Widget.AppCompat.Button">
+        <item name="android:minHeight">64dp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/am_texto</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <!-- Botón cuadrado para el menú (icono arriba, texto abajo) -->
+    <style name="AM.BotonMosaico" parent="Widget.AppCompat.Button">
+        <item name="android:minHeight">132dp</item>
+        <item name="android:textSize">21sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/am_texto</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <!-- Baldosa compacta del menú principal (icono arriba, texto abajo) -->
+    <style name="AM.Baldosa" parent="Widget.AppCompat.Button">
+        <item name="android:minHeight">92dp</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/am_texto</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:paddingLeft">6dp</item>
+        <item name="android:paddingRight">6dp</item>
+    </style>
+
+    <style name="AM.Titulo" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">28sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/am_texto</item>
+    </style>
+
+    <style name="AM.Texto" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@color/am_texto</item>
+    </style>
+
+    <style name="AM.TextoSuave" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/am_texto_suave</item>
+    </style>
+
+</resources>

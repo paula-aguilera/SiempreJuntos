@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/am_fondo"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/tvTituloLeccion"
+            style="@style/AM.Titulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:textSize="26sp" />
+
+        <TextView
+            android:id="@+id/tvNumeroPaso"
+            style="@style/AM.TextoSuave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/bg_tarjeta"
+            android:orientation="vertical"
+            android:padding="22dp">
+
+            <TextView
+                android:id="@+id/tvTextoPaso"
+                style="@style/AM.Texto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="140dp"
+                android:textSize="26sp" />
+
+            <TextView
+                android:id="@+id/tvConsejo"
+                style="@style/AM.TextoSuave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnSiguiente"
+            style="@style/AM.Boton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/bg_btn_verde"
+            android:text="Siguiente  ▶" />
+
+        <Button
+            android:id="@+id/btnAnterior"
+            style="@style/AM.BotonChico"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/bg_btn_azul"
+            android:text="◀  Paso anterior" />
+
+        <Button
+            android:id="@+id/btnVideoLeccion"
+            style="@style/AM.BotonChico"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/bg_btn_naranja"
+            android:text="🎬  Ver un video de este tema" />
+
+        <Button
+            android:id="@+id/btnSalirLeccion"
+            style="@style/AM.BotonChico"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_btn_gris"
+            android:text="Salir" />
+    </LinearLayout>
+</ScrollView>

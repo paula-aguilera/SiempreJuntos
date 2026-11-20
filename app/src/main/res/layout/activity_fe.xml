@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/am_fondo"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            style="@style/AM.Titulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📖  Palabras de ánimo" />
+
+        <TextView
+            style="@style/AM.Texto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp"
+            android:text="Usted no está solo(a). Jehová está cerca." />
+
+        <!-- Pensamiento de hoy -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/bg_tarjeta"
+            android:orientation="vertical"
+            android:padding="18dp">
+
+            <TextView
+                style="@style/AM.TextoSuave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pensamiento de hoy"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvRefHoy"
+                style="@style/AM.Titulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:textSize="26sp" />
+
+            <TextView
+                android:id="@+id/tvPensamientoHoy"
+                style="@style/AM.Texto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="12dp" />
+
+            <Button
+                android:id="@+id/btnLeerHoy"
+                style="@style/AM.BotonChico"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_btn_azul"
+                android:text="📖  Leer este pasaje" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/AM.Titulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Otros pasajes de ánimo"
+            android:textSize="22sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnFiltroTodos"
+                style="@style/AM.BotonChico"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_btn_gris"
+                android:text="Todos"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/btnFiltroSalmos"
+                style="@style/AM.BotonChico"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_btn_gris"
+                android:text="Salmos"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/btnFiltroProverbios"
+                style="@style/AM.BotonChico"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_btn_gris"
+                android:text="Proverbios"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llPasajes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+        <Button
+            android:id="@+id/btnBiblia"
+            style="@style/AM.BotonChico"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/bg_btn_verde"
+            android:text="Abrir la Biblia completa" />
+
+        <TextView
+            android:id="@+id/tvAvisoFe"
+            style="@style/AM.TextoSuave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/bg_tarjeta"
+            android:padding="16dp"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btnVolver"
+            style="@style/AM.BotonChico"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_btn_gris"
+            android:text="Volver" />
+    </LinearLayout>
+</ScrollView>

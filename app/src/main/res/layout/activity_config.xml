@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/am_fondo"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            style="@style/AM.Titulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="⚙️  Configuración" />
+
+        <TextView
+            style="@style/AM.TextoSuave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            android:text="Para quien cuida la aplicación. Toque una sección para abrirla."
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp"
+            android:background="@drawable/bg_tarjeta"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/hdrDatos"
+                style="@style/AM.Titulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:minHeight="68dp"
+                android:paddingEnd="18dp"
+                android:paddingStart="18dp"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:id="@+id/cuerpoDatos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="18dp"
+                android:paddingEnd="18dp"
+                android:paddingStart="18dp"
+                android:visibility="gone">
+
+            <EditText
+                android:id="@+id/etNombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nombre (por ejemplo: María)"
+                android:importantForAutofill="no"
+                android:inputType="textPersonName|textCapWords"
+                android:minHeight="56dp"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/etEdad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:hint="Edad (por ejemplo: 72)"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:maxLength="3"
+                android:minHeight="56dp"
+                android:textSize="20sp" />
+
+            <TextView
+                style="@style/AM.TextoSuave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="La edad solo se usa para elegir la música de su época."
+                android:textSize="14sp" />
+            <Button
+                android:id="@+id/btnGuardarNombre"
+                style="@style/AM.BotonChico"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/bg_btn_verde"
+                android:text="GUARDAR NOMBRE Y EDAD" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp"
+            android:background="@drawable/bg_tarjeta"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/hdrContactos"
+                style="@style/AM.Titulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:minHeight="68dp"
+                android:paddingEnd="18dp"
+                android:paddingStart="18dp"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:id="@+id/cuerpoContactos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="18dp"
+                android:paddingEnd="18dp"
+                android:paddingStart="18dp"
+                android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/llContactos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+            <Button
+                android:id="@+id/btnAgregarContacto"
+                style="@style/AM.BotonChico"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_btn_azul"
+                android:text="AGREGAR CONTACTO" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp"
+            android:background="@drawable/bg_tarjeta"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/hdrRecuerdos"
+                style="@style/AM.Titulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:minHeight="68dp"
+                android:paddingEnd="18dp"
+                android:paddingStart="18dp"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:id="@+id/cuerpoRecuerdos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="18dp"
+                android:paddingEnd="18dp"
+                android:paddingStart="18dp"
+                android:visibility="gone">
+
+            <Button
+                android:id="@+id/btnAgregarFotos"
+                style="@style/AM.BotonChico"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/bg_btn_naranja"
+                android:text="AGREGAR FOTOS" />
+            <Button
+                android:id="@+id/btnAgregarAudios"
+                style="@style/AM.BotonChico"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_btn_naranja"
+                android:text="AGREGAR AUDIOS" />
+
+            <LinearLayout
+                android:id="@+id/llRecuerdos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp"
+            android:background="@drawable/bg_tarjeta"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/hdrAvisos"
+                style="@style/AM.Titulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:minHeight="68dp"
+                android:paddingEnd="18dp"
+                android:paddingStart="18dp"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:id="@+id/cuerpoAvisos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="18dp"
+                android:paddingEnd="18dp"
+                android:paddingStart="18dp"
+                android:visibility="gone">
+
+            <Button
+                android:id="@+id/btnConfigRecordatorios"
+                style="@style/AM.BotonChico"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/bg_btn_naranja"
+                android:text="⏰  REMEDIOS, CITAS Y AGUA" />
+            <Button
+                android:id="@+id/btnContenidoDiario"
+                style="@style/AM.BotonChico"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_btn_verde"
+                android:text="☀️  SALUDO, MÚSICA Y VIDEOS" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp"
+            android:background="@drawable/bg_tarjeta"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/hdrSeguridad"
+                style="@style/AM.Titulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:minHeight="68dp"
+                android:paddingEnd="18dp"
+                android:paddingStart="18dp"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:id="@+id/cuerpoSeguridad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="18dp"
+                android:paddingEnd="18dp"
+                android:paddingStart="18dp"
+                android:visibility="gone">
+
+            <Button
+                android:id="@+id/btnUbicacion"
+                style="@style/AM.BotonChico"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/bg_btn_azul"
+                android:text="PERMITIR UBICACIÓN PARA AYUDA" />
+            <Button
+                android:id="@+id/btnCambiarPin"
+                style="@style/AM.BotonChico"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_btn_gris"
+                android:text="CAMBIAR PIN" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnVolver"
+            style="@style/AM.BotonChico"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_btn_gris"
+            android:text="LISTO, VOLVER" />
+
+    </LinearLayout>
+</ScrollView>

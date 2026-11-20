@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/am_fondo"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Paso 1: confirmar para evitar toques por error -->
+        <LinearLayout
+            android:id="@+id/panelConfirmar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/AM.Titulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="¿Necesita ayuda?"
+                android:textColor="@color/am_rojo"
+                android:textSize="34sp" />
+
+            <TextView
+                style="@style/AM.Texto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:text="Toque la respuesta. Si fue sin querer, no pasa nada." />
+
+            <Button
+                android:id="@+id/btnSiAyuda"
+                style="@style/AM.Boton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/bg_btn_rojo"
+                android:minHeight="120dp"
+                android:text="SÍ, NECESITO AYUDA"
+                android:textSize="26sp" />
+
+            <Button
+                android:id="@+id/btnNoAyuda"
+                style="@style/AM.Boton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_btn_verde"
+                android:text="NO, FUE SIN QUERER" />
+        </LinearLayout>
+
+        <!-- Paso 2: llamar y avisar -->
+        <LinearLayout
+            android:id="@+id/panelAyuda"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+        <TextView
+            style="@style/AM.Titulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pidiendo ayuda"
+            android:textColor="@color/am_rojo" />
+
+        <TextView
+            style="@style/AM.Texto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Se abrió el teléfono con el 131. Toque el botón verde de llamar." />
+
+        <Button
+            android:id="@+id/btnLlamar131"
+            style="@style/AM.Boton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/bg_btn_rojo"
+            android:text="📞  LLAMAR AL 131" />
+
+        <TextView
+            style="@style/AM.Titulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Avisar a mi familia"
+            android:textSize="26sp" />
+
+        <TextView
+            android:id="@+id/tvContactoPrincipal"
+            style="@style/AM.Texto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tvUbicacion"
+            style="@style/AM.Texto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btnAvisarWhatsApp"
+            style="@style/AM.Boton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/bg_btn_verde"
+            android:text="AVISAR POR WHATSAPP" />
+
+        <Button
+            android:id="@+id/btnAvisarSms"
+            style="@style/AM.Boton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/bg_btn_azul"
+            android:text="AVISAR POR MENSAJE" />
+
+        <Button
+            android:id="@+id/btnLlamarFamiliar"
+            style="@style/AM.Boton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/bg_btn_naranja"
+            android:text="LLAMAR A MI FAMILIAR" />
+
+        <Button
+            android:id="@+id/btnVolver"
+            style="@style/AM.BotonChico"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_btn_gris"
+            android:text="VOLVER" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

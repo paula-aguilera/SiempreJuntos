@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/am_fondo"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            style="@style/AM.Titulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="⏰  Mis recordatorios" />
+
+        <TextView
+            style="@style/AM.Texto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp"
+            android:text="El celular le avisará a la hora que elija: remedios, agua y citas médicas." />
+
+        <Button
+            android:id="@+id/btnAgregarRemedio"
+            style="@style/AM.Boton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/bg_btn_verde"
+            android:text="💊  Agregar un remedio" />
+
+        <Button
+            android:id="@+id/btnAgregarCita"
+            style="@style/AM.Boton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/bg_btn_azul"
+            android:text="🩺  Agregar una cita médica" />
+
+        <Button
+            android:id="@+id/btnAgregarAgua"
+            style="@style/AM.Boton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/bg_btn_azul"
+            android:text="💧  Agua: 4 avisos al día" />
+
+        <TextView
+            style="@style/AM.TextoSuave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:text="💧 Beba agua en abundancia: mínimo 2 litros al día."
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btnAgregarOtro"
+            style="@style/AM.BotonChico"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            android:background="@drawable/bg_btn_naranja"
+            android:text="🔔  Otro recordatorio" />
+
+        <TextView
+            style="@style/AM.Titulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Mis avisos"
+            android:textSize="22sp" />
+
+        <LinearLayout
+            android:id="@+id/llAlarmas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+        <TextView
+            android:id="@+id/tvSinAlarmas"
+            style="@style/AM.TextoSuave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:text="Todavía no hay avisos. Toque uno de los botones de arriba." />
+
+        <TextView
+            android:id="@+id/tvAvisoAlarmas"
+            style="@style/AM.TextoSuave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/bg_tarjeta"
+            android:padding="16dp"
+            android:textSize="16sp" />
+    </LinearLayout>
+</ScrollView>

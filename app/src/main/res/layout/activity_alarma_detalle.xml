@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/am_fondo"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/tvDetTipo"
+            style="@style/AM.Titulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tvDetAgua"
+            style="@style/AM.Texto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/am_azul"
+            android:textSize="17sp"
+            android:visibility="gone" />
+
+        <TextView
+            style="@style/AM.TextoSuave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="¿Qué quiere recordar?"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etDetTexto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:importantForAutofill="no"
+            android:inputType="textCapSentences"
+            android:minHeight="56dp"
+            android:textSize="20sp" />
+
+        <TextView
+            style="@style/AM.TextoSuave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="¿Cuándo?"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvDetCuando"
+            style="@style/AM.Texto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnDetHora"
+                style="@style/AM.BotonChico"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_btn_azul"
+                android:text="Cambiar hora" />
+
+            <Button
+                android:id="@+id/btnDetFecha"
+                style="@style/AM.BotonChico"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_btn_azul"
+                android:text="Cambiar fecha" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/AM.TextoSuave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="¿Cuánto antes avisamos?"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnDetAntes"
+            style="@style/AM.BotonChico"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_btn_naranja" />
+
+        <TextView
+            style="@style/AM.TextoSuave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="Descripción o nota (opcional)"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etDetDescripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top|start"
+            android:hint="Por ejemplo: con el desayuno, nombre del doctor, lugar…"
+            android:importantForAutofill="no"
+            android:inputType="textCapSentences|textMultiLine"
+            android:minHeight="96dp"
+            android:textSize="19sp" />
+
+        <TextView
+            style="@style/AM.TextoSuave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Escriba solo lo necesario. Esta nota aparece en el aviso."
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btnDetGuardar"
+            style="@style/AM.Boton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/bg_btn_verde"
+            android:text="✅  GUARDAR CAMBIOS" />
+
+        <Button
+            android:id="@+id/btnDetQuitar"
+            style="@style/AM.BotonChico"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_btn_rojo"
+            android:text="Quitar este aviso"
+            android:textColor="@color/am_rojo" />
+
+    </LinearLayout>
+</ScrollView>

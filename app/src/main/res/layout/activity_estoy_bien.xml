@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/am_fondo"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Paso 1: ¿Cómo está hoy? -->
+        <LinearLayout
+            android:id="@+id/panelAnimo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/AM.Titulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="¿Cómo está hoy?" />
+
+            <Button
+                android:id="@+id/btnBien"
+                style="@style/AM.Boton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="14dp"
+                android:background="@drawable/bg_btn_verde"
+                android:text="😊  BIEN" />
+
+            <Button
+                android:id="@+id/btnRegular"
+                style="@style/AM.Boton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="14dp"
+                android:background="@drawable/bg_btn_naranja"
+                android:text="😐  MÁS O MENOS" />
+
+            <Button
+                android:id="@+id/btnMal"
+                style="@style/AM.Boton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:background="@drawable/bg_btn_rojo"
+                android:text="😟  NO ME SIENTO BIEN" />
+
+            <Button
+                android:id="@+id/btnVolverAnimo"
+                style="@style/AM.BotonChico"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_btn_gris"
+                android:text="VOLVER" />
+        </LinearLayout>
+
+        <!-- Paso 2: avisar a la familia -->
+        <LinearLayout
+            android:id="@+id/panelAvisar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tvResultado"
+                style="@style/AM.Titulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/tvSinContactos"
+                style="@style/AM.Texto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp" />
+
+            <Button
+                android:id="@+id/btnAvisarWhatsApp"
+                style="@style/AM.Boton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/bg_btn_verde"
+                android:text="AVISAR POR WHATSAPP" />
+
+            <Button
+                android:id="@+id/btnAvisarSms"
+                style="@style/AM.Boton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/bg_btn_azul"
+                android:text="AVISAR POR MENSAJE" />
+
+            <Button
+                android:id="@+id/btnLlamar131"
+                style="@style/AM.Boton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/bg_btn_rojo"
+                android:text="📞  LLAMAR AL 131"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btnNoAvisar"
+                style="@style/AM.BotonChico"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_btn_gris"
+                android:text="NO AVISAR, VOLVER" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

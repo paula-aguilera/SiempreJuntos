@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/am_fondo"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            style="@style/AM.Titulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Números de emergencia" />
+
+        <TextView
+            style="@style/AM.Texto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Toque un botón: se abre el teléfono con el número. Luego toque el botón verde de llamar."
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btn131"
+            style="@style/AM.Boton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/bg_btn_rojo"
+            android:text="AMBULANCIA (SAMU)  131"
+            android:textSize="22sp" />
+
+        <Button
+            android:id="@+id/btn132"
+            style="@style/AM.Boton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/bg_btn_naranja"
+            android:text="BOMBEROS  132"
+            android:textSize="22sp" />
+
+        <Button
+            android:id="@+id/btn133"
+            style="@style/AM.Boton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/bg_btn_verde"
+            android:text="CARABINEROS  133"
+            android:textSize="22sp" />
+
+        <Button
+            android:id="@+id/btnSaludResponde"
+            style="@style/AM.Boton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/bg_btn_azul"
+            android:text="SALUD RESPONDE  600 360 7777"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn4141"
+            style="@style/AM.Boton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/bg_btn_gris"
+            android:text="SI SIENTE QUE NO QUIERE VIVIR  *4141"
+            android:textSize="18sp" />
+
+        <TextView
+            style="@style/AM.Texto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Esta aplicación no reemplaza al 131. Si se siente muy mal, llame siempre al 131."
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btnVolver"
+            style="@style/AM.BotonChico"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_btn_gris"
+            android:text="VOLVER" />
+
+    </LinearLayout>
+</ScrollView>

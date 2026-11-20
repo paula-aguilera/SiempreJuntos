@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/am_fondo"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            style="@style/AM.Titulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🎵  Bienestar" />
+
+        <TextView
+            style="@style/AM.Texto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Música, ejercicios suaves y ratitos de calma. Elija lo que le guste hoy." />
+
+        <Button
+            android:id="@+id/btnMusica"
+            style="@style/AM.Boton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/bg_btn_azul"
+            android:text="🎵  Música para alegrar el día" />
+
+        <Button
+            android:id="@+id/btnEjercicios"
+            style="@style/AM.Boton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/bg_btn_verde"
+            android:text="🧘  Ejercicios suaves" />
+
+        <Button
+            android:id="@+id/btnInfusiones"
+            style="@style/AM.Boton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/bg_btn_naranja"
+            android:text="🍵  Infusiones y té" />
+
+        <Button
+            android:id="@+id/btnRespiracion"
+            style="@style/AM.Boton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/bg_btn_azul"
+            android:text="🌬️  Respirar y calmarse" />
+
+        <Button
+            android:id="@+id/btnMemoria"
+            style="@style/AM.Boton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/bg_btn_verde"
+            android:text="🧠  Juegos para la memoria" />
+
+        <TextView
+            android:id="@+id/tvTituloVideosFamilia"
+            style="@style/AM.Titulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="🎬  Videos de mi familia"
+            android:textSize="24sp" />
+
+        <LinearLayout
+            android:id="@+id/llVideosFamilia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+        <TextView
+            android:id="@+id/tvSinVideos"
+            style="@style/AM.TextoSuave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:text="Todavía no hay videos de la familia. Un familiar puede agregarlos en Configuración." />
+
+        <TextView
+            android:id="@+id/tvAvisoSalud"
+            style="@style/AM.TextoSuave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/bg_tarjeta"
+            android:padding="16dp"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btnVolver"
+            style="@style/AM.BotonChico"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_btn_gris"
+            android:text="Volver" />
+    </LinearLayout>
+</ScrollView>

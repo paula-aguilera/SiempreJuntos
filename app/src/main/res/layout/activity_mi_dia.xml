@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/am_fondo"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Preguntas, una por una -->
+        <LinearLayout
+            android:id="@+id/panelPregunta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvProgreso"
+                style="@style/AM.TextoSuave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/bg_tarjeta"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:id="@+id/tvPregunta"
+                    style="@style/AM.Titulo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/tvSub"
+                    style="@style/AM.Texto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llOpciones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+            <Button
+                android:id="@+id/btnSalir"
+                style="@style/AM.BotonChico"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bg_btn_gris"
+                android:text="Ahora no, volver" />
+        </LinearLayout>
+
+        <!-- Final del saludo -->
+        <LinearLayout
+            android:id="@+id/panelFin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tvFinTitulo"
+                style="@style/AM.Titulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/tvFinTexto"
+                style="@style/AM.Texto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="18dp" />
+
+            <Button
+                android:id="@+id/btnFin131"
+                style="@style/AM.Boton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/bg_btn_rojo"
+                android:text="📞  Llamar al 131 si es urgente"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btnFinAvisar"
+                style="@style/AM.Boton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/bg_btn_verde"
+                android:text="💬  Avisar a mi familia" />
+
+            <Button
+                android:id="@+id/btnFinMusica"
+                style="@style/AM.Boton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/bg_btn_azul"
+                android:text="🎵  Escuchar música" />
+
+            <Button
+                android:id="@+id/btnFinFamilia"
+                style="@style/AM.Boton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/bg_btn_naranja"
+                android:text="📞  Llamar a mi familia" />
+
+            <Button
+                android:id="@+id/btnFinVolver"
+                style="@style/AM.BotonChico"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bg_btn_gris"
+                android:text="Volver al inicio" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

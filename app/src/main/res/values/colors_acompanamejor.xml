@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="am_fondo">#FFF9F1</color>
+    <color name="am_texto">#1F2933</color>
+    <color name="am_texto_suave">#52606D</color>
+    <color name="am_blanco">#FFFFFF</color>
+    <color name="am_rojo">#B3261E</color>
+    <color name="am_verde">#1E7B3C</color>
+    <color name="am_azul">#1F5FA8</color>
+    <color name="am_naranja">#B85C00</color>
+    <color name="am_gris">#52606D</color>
+</resources>

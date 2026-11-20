@@ -1,0 +1,116 @@
+SIEMPREJUNTOS - CODIGO ANDROID, VERSION 0.2
+=============================================
+
+QUE ES ESTE ZIP
+Son los archivos de la primera version de la app, preparados para tu proyecto
+"SiempreJuntos" (Java, API 24, paquete com.example.siemprejuntos).
+Al extraerlo se mezcla con tu proyecto y reemplaza 3 archivos de la plantilla:
+  - MainActivity.java
+  - res/layout/activity_main.xml
+  - AndroidManifest.xml
+
+
+COMO INSTALARLO (3 PASOS)
+1. Extrae SiempreJuntos.zip en  C:\AndroidProyects\
+   (clic derecho > Extraer todo > escribe C:\AndroidProyects\ como destino.
+    NO elijas C:\AndroidProyects\SiempreJuntos, porque el zip ya trae esa carpeta.)
+   Si Windows pregunta, elige "Reemplazar los archivos en el destino".
+2. Abre Android Studio con tu proyecto y toca  File > Sync Project with Gradle Files.
+3. Conecta tu celular (o abre el emulador) y toca el boton verde Run (triangulo).
+
+
+PARA PROBARLO EN TU CELULAR SIN CABLE
+  Build > Build Bundle(s) / APK(s) > Build APK(s)
+  Cuando termine, toca "locate": ahi esta app-debug.apk.
+  Enviatelo por WhatsApp o Google Drive, abrelo en el celular y permite la
+  instalacion de apps desconocidas cuando el celular lo pida.
+
+
+PRIMER USO (fotos: Mis recuerdos > "Agregar fotos o audios" o Configuracion > AGREGAR FOTOS)
+1. Al abrir la app te explica el permiso de ubicacion: toca CONTINUAR y acepta.
+2. Abajo de la pantalla principal toca "Configuracion (solo para el familiar)".
+3. Crea un PIN de 4 numeros. La persona mayor NO necesita este PIN.
+4. Escribe el nombre de la persona, agrega contactos de confianza (el primero
+   es el principal), y agrega fotos y audios.
+   Telefonos: escribelos asi  +56 9 1234 5678  (para que WhatsApp funcione).
+
+
+QUE HACE ESTA VERSION (0.2)
+- Colores claros y letra oscura, mas faciles de leer.
+- Inicio: saludo segun la hora, fecha, clima de hoy con un consejo, mensaje del
+  dia y una idea segun la hora.
+- MI SALUDO DE HOY: preguntas de a una (como amanecio, que dia es, remedios si el
+  familiar lo activa, si ya comio, y el recordatorio importante del dia).
+  Al final puede avisar a la familia por WhatsApp. Las respuestas NO se guardan.
+- NECESITO AYUDA: boton abajo y separado. Primero pregunta "Necesita ayuda?"
+  (SI / NO, fue sin querer). Con SI abre el telefono con el 131 y permite avisar
+  por WhatsApp o mensaje con la ubicacion aproximada.
+- APRENDER: 6 tutoriales paso a paso (ubicacion, videollamada, audio, foto,
+  llamar a la familia, pedir ayuda) con boton para ver un video del tema.
+- BIENESTAR: musica, ejercicios suaves, infusiones, respiracion y juegos de
+  memoria (abren YouTube) y los videos que agregue la familia.
+- PALABRAS DE ANIMO (opcional): 31 pasajes biblicos (Salmos, Proverbios y otros) de animo con un pensamiento
+  corto en palabras propias de la app y un boton para leer el texto en jw.org
+  (Traduccion del Nuevo Mundo). Para verla: Configuracion > Saludo, musica y
+  videos > marcar "Mostrar Palabras de animo". Viene apagada.
+- CONTARLE A MI FAMILIA COMO ESTOY: 3 opciones y aviso opcional.
+- MI FAMILIA, MIS RECUERDOS y NUMEROS DE EMERGENCIA, como antes.
+- Configuracion con PIN: nombre, contactos, fotos, audios, permisos y nueva
+  pantalla "Saludo, musica y videos" (recordatorio del dia, musica favorita,
+  preguntar por remedios y videos de la familia).
+
+RECORDATORIOS (remedios, citas medicas y agua)
+- Boton "Mis recordatorios" en el inicio (y tambien en Configuracion): la persona
+  o su familiar agregan avisos de remedios (todos los dias a una hora), citas
+  medicas (fecha y hora), agua cada 2 horas (9:00 a 19:00) u otros.
+- A la hora, el celular muestra una notificacion con sonido. Al tocarla se abre una
+  pantalla grande con "Listo, ya lo hice" y "Avisarme en 10 minutos".
+- Funcionan sin internet y se reprograman solos al encender el celular.
+- Android 13 o mas pide permiso para mostrar avisos: tocar "Permitir".
+- Para que no se atrasen: Ajustes > Aplicaciones > SiempreJuntos > Bateria >
+  "Sin restricciones" (en algunas marcas hay ademas una lista de "apps protegidas").
+- Todavia NO avisan al cuidador si la persona no responde: eso viene con Firebase.
+
+NAVEGACION Y ICONO
+- Todas las pantallas (menos el inicio) tienen abajo una barra fija con
+  "Volver" e "Inicio", siempre en el mismo lugar.
+- El icono es el del "abrazo protector". icono_playstore_512.png (se entrega
+  aparte) sirve para la ficha de Google Play.
+
+NOTAS
+- El clima necesita internet y el permiso de ubicacion. Usa el servicio gratuito
+  Open-Meteo. Antes de vender la app hay que revisar sus condiciones de uso
+  comercial (la version gratuita es para uso no comercial).
+- Los videos de YouTube salen de busquedas: la calidad varia. Mas adelante se
+  puede reemplazar por videos elegidos uno a uno.
+- Los enlaces de jw.org usan el formato de su pagina (libro/capitulo). Prueba
+  uno o dos en el celular; si alguno no abre, avisame y lo corrijo.
+- Los textos biblicos no se copian dentro de la app (tienen derechos de autor):
+  se leen en jw.org.
+- Los textos de salud son generales y no reemplazan a un medico.
+
+QUE TODAVIA NO HACE (SON LAS SIGUIENTES ETAPAS)
+- No hay nube: todo se guarda solo en este celular.
+- No hay aviso automatico al cuidador (hoy la persona toca "enviar" en WhatsApp
+  o en mensajes). El envio automatico necesita la etapa de Firebase.
+- No hay recordatorios con notificacion, chequeo diario programado, ni geovalla
+  de 500 m, ni "Voy a salir". Tampoco mensajes con IA ni subir contenido a distancia.
+
+
+ANTES DE PUBLICAR EN GOOGLE PLAY
+- El nombre de paquete com.example.* no se acepta en Google Play. Hay que
+  cambiarlo (por ejemplo a cl.siemprejuntos.app) con el cambio de nombre de
+  Android Studio. Mientras mas temprano, mas facil.
+- Revisar la guia 05 de la documentacion.
+
+
+SI ANDROID STUDIO MUESTRA UN ERROR
+Abre la pestana "Build" (abajo), copia el mensaje completo y mandamelo.
+Esta version fue escrita y revisada, pero no pude compilarla en mi entorno.
+
+
+ICONO
+El icono de la app es res/mipmap-*/ic_siempre*.png (entrelazado de colores sobre fondo crema).
+La imagen original era pequena (181 px), por eso se ve algo suave. Para publicar en Play
+necesitas la version grande (1024 px): en Android Studio, clic derecho en res >
+New > Image Asset, elige tu imagen grande y reemplaza el icono.

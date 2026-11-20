@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/am_fondo"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="14dp">
+
+            <!-- Saludo, fecha y clima -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/bg_tarjeta"
+                android:orientation="vertical"
+                android:paddingBottom="12dp"
+                android:paddingEnd="16dp"
+                android:paddingStart="16dp"
+                android:paddingTop="12dp">
+
+                <TextView
+                    android:id="@+id/tvSaludo"
+                    style="@style/AM.Titulo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="26sp" />
+
+                <TextView
+                    android:id="@+id/tvFecha"
+                    style="@style/AM.Texto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/tvClima"
+                    style="@style/AM.Texto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/am_azul"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvConsejoClima"
+                    style="@style/AM.TextoSuave"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:textSize="15sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <!-- Mensaje cariñoso del día, con modo audio -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/bg_tarjeta"
+                android:orientation="vertical"
+                android:paddingBottom="12dp"
+                android:paddingEnd="16dp"
+                android:paddingStart="16dp"
+                android:paddingTop="12dp">
+
+                <TextView
+                    style="@style/AM.TextoSuave"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="💌  Para usted, hoy"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvMensaje"
+                    style="@style/AM.Texto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="4dp"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/btnEscuchar"
+                    style="@style/AM.BotonChico"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_btn_azul"
+                    android:minHeight="56dp"
+                    android:text="🔊  Escuchar mi saludo"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <!-- Acción principal -->
+            <Button
+                android:id="@+id/btnMiDia"
+                style="@style/AM.Boton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/bg_btn_verde"
+                android:minHeight="72dp"
+                android:text="☀️  Mi saludo de hoy"
+                android:textSize="21sp" />
+
+            <!-- Menú principal: solo cuatro opciones -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnFamilia"
+                    style="@style/AM.Baldosa"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_btn_azul"
+                    android:text="📞&#10;Mi familia" />
+
+                <Button
+                    android:id="@+id/btnRecuerdos"
+                    style="@style/AM.Baldosa"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_btn_naranja"
+                    android:text="📷&#10;Mis recuerdos" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnRecordatorios"
+                    style="@style/AM.Baldosa"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_btn_naranja"
+                    android:text="⏰&#10;Mis recordatorios" />
+
+                <Button
+                    android:id="@+id/btnMas"
+                    style="@style/AM.Baldosa"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_btn_verde"
+                    android:text="✨&#10;Más cosas" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnConfig"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:minHeight="48dp"
+                android:text="Configuración (solo para el familiar)"
+                android:textAllCaps="false"
+                android:textColor="@color/am_gris"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Botón de ayuda abajo y separado, con confirmación para evitar toques por error -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_barra_ayuda"
+        android:elevation="8dp"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/btnAyuda"
+            style="@style/AM.Boton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_btn_rojo"
+            android:minHeight="64dp"
+            android:text="🆘  Necesito ayuda"
+            android:textColor="@color/am_rojo"
+            android:textSize="21sp" />
+    </LinearLayout>
+
+</LinearLayout>
